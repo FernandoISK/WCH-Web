@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alave login</title>
+    <link rel="stylesheet" href="/css/login-style.css">
+    <link rel="stylesheet" href="/componets/PopAlertJS/PopAlert.css">
+</head>
+<body>
+        <div class="wrapper">
+            <div class="container">
+                    <div class="head-image">
+                        <img src="/image/icon_lg.png" alt="">
+                    </div>
+                    <h2><span>LOG</span>IN</h2>
+                    <form action="post">
+                        <div class="input-box">
+                            <input type="text" name="username" id="username" required>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-box">
+                                <input type="password" name="password" id="password" required>
+                                <span>Password</span>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="checkbox" name="remember" id="remember">
+                                <label for="remember">Remeber me</label>
+                                </div>
+                                <div class="col">
+                                    <a href="/pages/login/recover-password.html">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <button type="submit" class="save-btn" id="save">
+                                Continue
+                            </button>
+                        </div>
+                    </form>
+                    
+            </div>  
+        </div>
+        <script src="/js/login/login.js"></script>
+        <script src="/componets/PopAlertJS/PopAlert.js"></script>
+</body>
+</html>
