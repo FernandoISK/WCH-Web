@@ -7,10 +7,12 @@ button.onclick = function (e) {
     this.innerHTML = "<div class='loader'></div>";
     setTimeout(() => {
         if (password.value == 'pass' && username.value == 'user')
-            window.location.href = window.location.host + '/dashboard.html'
+            window.location.href = '/pages/dashboard.html'
         else {
             ALERT.show({messenge: 'Incorrect username or passwort, try again.', type: ALERT.type.danger})
+            password.classList.add("invalid");
+            username.classList.add("invalid");
             this.innerHTML = "Continue";
         }
     }, 2000)
-}
+} 

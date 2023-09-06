@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alave login</title>
+    <link rel="stylesheet" href="/css/login-style.css">
+    <link rel="stylesheet" href="/componets/PopAlertJS/PopAlert.css">
+</head>
+<body>
+        <div class="wrapper">
+            <div class="container">
+                    <div class="head-image">
+                        <img src="/image/icon_lg.png" alt="">
+                    </div>
+                    <h2><span>Recover</span> Password</h2>
+                    <form action="post">
+                        <p class="recover-info">Check your email, we will send you a code that you will need to enter to change your
+                            password.</p>
+                        <div class="item-code">
+                            <input type="number" class="code" min="0" max="9" name="" id="" placeholder="0" required>
+                            <input type="number" class="code" min="0" max="9" name="" id="" placeholder="0" required>
+                            <input type="number" class="code" min="0" max="9" name="" id="" placeholder="0" required>
+                            <input type="number" class="code" min="0" max="9" name="" id="" placeholder="0" required>
+                            <input type="number" class="code" min="0" max="9" name="" id="" placeholder="0" required>
+                            <input type="number" class="code" min="0" max="9" name="" id="" placeholder="0" required>
+                        </div>
+                        <label class="label-send-code">You didn't receive any code? <a class="" id="resend-code">Click here to resend the code.</a></label>
+                        <div class="item-right">
+                            <button type="button" class="cancel">Cancel</button>
+                            <button type="button" class="success">Validate</button>
+                        </div>
+                    </form>
+                    
+            </div>  
+        </div>
+
+        <script src="/js/login/validateCode.js"></script>
+        <script src="/componets/PopAlertJS/PopAlert.js"></script>
+</body>
+</html> 
