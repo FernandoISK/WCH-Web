@@ -1,0 +1,153 @@
+:root {
+    --form-primary: #cfe2ff;
+    --form-success: #d1e7dd;
+    --form-warning: #fff3cd;
+    --form-danger: #f8d7da;
+    --form-primary-icon: #9cc3ff;
+    --form-success-icon: #afd6c4;
+    --form-warning-icon: #ffe79a;
+    --form-danger-icon: #f0acb2;
+}
+
+.container-alert {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* ALERT IN FORM */
+.content-alert-form.alert-primary {
+    background-color: var(--form-primary);
+}
+
+.content-alert-form.alert-primary .icon {
+    color: var(--form-primary-icon);
+}
+
+.content-alert-form.alert-success {
+    background-color: var(--form-success);
+}
+
+.content-alert-form.alert-success .icon {
+    color: var(--form-success-icon);
+}
+
+.content-alert-form.alert-warning {
+    background-color: var(--form-warning);
+}
+
+.content-alert-form.alert-warning .icon {
+    color: var(--form-warning-icon);
+}
+
+.content-alert-form.alert-danger {
+    background-color: var(--form-danger);
+}
+
+.content-alert-form.alert-danger .icon {
+    color: var(--form-danger-icon);
+}
+.content-alert-form {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    animation-name: open-alert-form;
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
+    position: relative;
+}
+
+.content-alert-form .alert-content {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.content-alert-form .messenge {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.48);
+}
+
+.content-alert-form .alert-content .messenge p{
+    margin: 0;
+}
+
+.content-alert-form .btn-close-alert {
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.content-alert-form .btn-close-alert .icon {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+}
+.content-alert-form.alert-primary .btn-close-alert {
+    background-color: var(--form-primary-icon);
+}
+.content-alert-form.alert-success .btn-close-alert {
+    background-color: var(--form-success-icon);
+}
+.content-alert-form.alert-warning .btn-close-alert {
+    background-color: var(--form-warning-icon);
+}
+.content-alert-form.alert-danger .btn-close-alert {
+    background-color: var(--form-danger-icon);
+}
+
+.content-alert-form.close-alert {
+	animation-name: close-alert-form;
+	animation-duration: 200ms;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes open-alert-form {
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes close-alert-form {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateY(-70%) rotateX(-90deg);
+    }
+}
+
+.content-alert-form.self-closing::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    animation-name: self-closing-form;
+	animation-duration: 5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes self-closing-form {
+    from {
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+/*  */
