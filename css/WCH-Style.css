@@ -8,7 +8,6 @@
 }
 
 :root {
-
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
@@ -30,7 +29,7 @@ body {
     transition: var(--tran-04);
 }
 
-body.dark{
+body.dark {
     --body-color: #18191A;
     --sidebar-color: #242526;
     --primary-color: #3A3B3C;
@@ -50,10 +49,13 @@ body.dark{
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
+    z-index: 10;
 }
+
 .sidebar.close {
     width: 88px;
 }
+
 /*  ===== Resuable CSS ===== */
 .sidebar .text {
     font-size: 16px;
@@ -64,14 +66,17 @@ body.dark{
     opacity: 1;
 }
 
-.sidebar.close .text{
-    opacity: 0;;
+.sidebar.close .text {
+    opacity: 0;
 }
+
+.navb-items .user-content,
 .sidebar .image {
     min-width: 60px;
     display: flex;
     align-items: center;
 }
+
 .sidebar ul {
     /* DELETE BOOTSTRAP PADDING  */
     padding: 0;
@@ -97,7 +102,7 @@ body.dark{
     color: var(--text-color);
     transition: var(--tran-02);
 }
-
+.navb-items header,
 .sidebar header {
     position: relative;
 }
@@ -107,11 +112,12 @@ body.dark{
     border-radius: 6px;
 }
 
+.navb-items .user-content,
 .sidebar header .image-text {
     display: flex;
     align-items: center;
 }
-
+header .user-content .headler-profile,
 header .image-text .header-text {
     display: flex;
     flex-direction: column;
@@ -141,11 +147,12 @@ header .image-text .header-text {
     font-size: 22px;
     transition: var(--tran-03);
 }
-.sidebar.close header .toggle{
+
+.sidebar.close header .toggle {
     transform: translateY(-50%);
 }
 
-body.dark .sidebar header .toggle{
+body.dark .sidebar header .toggle {
     transform: rotate(180deg);
     color: var(--text-color);
 }
@@ -155,6 +162,7 @@ body.dark .sidebar header .toggle{
     border-radius: 6px;
 
 }
+
 .search-box input {
     height: 100%;
     width: 100%;
@@ -163,6 +171,7 @@ body.dark .sidebar header .toggle{
     border-radius: 6px;
     background-color: var(--primary-color-light);
 }
+
 .sidebar li a {
     height: 100%;
     width: 100%;
@@ -187,40 +196,42 @@ body.dark .sidebar li a:hover .text {
     color: var(--text-color);
 }
 
-.sidebar .menu-bar{
+.sidebar .menu-bar {
     height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.menu-bar .mode{
+.menu-bar .mode {
     position: relative;
     border-radius: 6px;
     background: var(--primary-color-light);
 }
 
-.menu-bar .mode .moon-sun{
+.menu-bar .mode .moon-sun {
     height: 50px;
     width: 60px;
     display: flex;
     align-items: center;
 }
 
-.menu-bar .mode i{
+.menu-bar .mode i {
     position: absolute;
     transition: var(--tran-03);
 }
+
 body.dark .menu-bar .mode i.moon,
-.menu-bar .mode i.sun{
+.menu-bar .mode i.sun {
     opacity: 0;
 }
-body.dark .menu-bar .mode i.sun{
+
+body.dark .menu-bar .mode i.sun {
     opacity: 1;
 }
 
 
-.menu-bar .mode .toggle-switch{
+.menu-bar .mode .toggle-switch {
     position: absolute;
     right: 0;
     display: flex;
@@ -233,7 +244,7 @@ body.dark .menu-bar .mode i.sun{
     border-radius: 6px;
 }
 
-.toggle-switch .switch{
+.toggle-switch .switch {
     position: relative;
     height: 22px;
     width: 44px;
@@ -241,7 +252,7 @@ body.dark .menu-bar .mode i.sun{
     background: var(--toggle-color);
 }
 
-.switch::before{
+.switch::before {
     content: '';
     position: absolute;
     height: 15px;
@@ -254,6 +265,33 @@ body.dark .menu-bar .mode i.sun{
     transition: var(--tran-04);
 }
 
-body.dark .switch::before{
-    left:24px
+body.dark .switch::before {
+    left: 24px
+}
+
+.top-navbar{
+    position: absolute;
+    width: calc(100% - 250px);
+    right: 0;
+    padding: 17px 11px 60px 11px;
+    transition: var(--tran-05);
+}
+
+.top-navbar.close{
+    width: calc(100% - 88px);
+
+}
+
+.navb-items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-content img{
+    width: 60px;
+    height: 60px;
+    background: #d0d0d1;
+    border-radius: 50%;
+    margin-right: 14px;
 }
