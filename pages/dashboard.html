@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- nav.Sidebar -->
     <nav class="sidebar">
         <header>
             <div class="image-text">
@@ -19,13 +20,13 @@
                 </span>
 
                 <div class="text header-text">
-                    <span class="name">CodingLab</span>
-                    <span class="profession">Web Developer</span>
+                    <span class="name">Wheelchair Service</span>
+                    <span class="profession">By alave</span>
                 </div>
             </div>
             <i class='bx bx-chevron-right toggle'></i>
         </header>
-
+        <!-- .menu-bar -->
         <div class="menu-bar">
             <div class="menu">
                 <li class="search-box">
@@ -41,34 +42,25 @@
                     </li>
                     <li class="nav-link">
                         <a href="#">
-                            <i class="bx bx-bar-chart-alt-2 icon"></i>
-                            <span class="text nav-text">Revenue</span>
+                            <div class="content-icon-nav">
+                                <i class='bx bx-accessibility icon'></i>
+                            </div>
+                            <span class="text nav-text">Services</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <i class="bx bx-bell icon"></i>
-                            <span class="text nav-text">Notifications</span>
+                            <span class="text nav-text">Collaborators</span>
                         </a>
                     </li>
                     <li class="nav-link">
                         <a href="#">
                             <i class="bx bx-pie-chart-alt-2 icon"></i>
-                            <span class="text nav-text">Analytics</span>
+                            <span class="text nav-text">Reviwes</span>
                         </a>
                     </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class="bx bx-heart icon"></i>
-                            <span class="text nav-text">Like</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class="bx bx-wallet icon"></i>
-                            <span class="text nav-text">Wallets</span>
-                        </a>
-                    </li>
+
                 </ul>
             </div>
 
@@ -94,11 +86,13 @@
 
             </div>
         </div>
-
+        <!-- /.menu-bar -->
         </div>
     </nav>
+    <!-- /nav.Sidebar -->
 
-    <nav class="top-navbar" style="background: red;">
+    <!-- nav.top-navbar -->
+    <nav class="top-navbar">
         <div class="navb-items">
             <header>
                 <div class="user-content">
@@ -109,14 +103,58 @@
                         <span class="username">Fernando Cancino</span>
                         <span class="user-level">Developer</span>
                     </div>
-                    <i class='bx bx-chevron-right toggle'></i>
+                    <i class='bx bx-chevron-right toggle-user'></i>
+                </div>
+                <div class="dropdown-user">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class='bx bxs-user'></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class='bx bx-bar-chart-square'></i>
+                                <span>My logs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class='bx bx-lock-open-alt'></i>
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-divider"></div>
+                    <div class="logout-user">
+                        <a href="" class="user-log-out">
+                            <i class="bx bx-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+
                 </div>
             </header>
-
         </div>
 
     </nav>
+    <!-- /nav.top-navbar -->
 
+    <div class="wrapper-home">
+        <div class="title-container">
+            <h3>Dashboard</h3>
+        </div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+
+        </div>
+    </div>
     <script src="/componets/bootstrap-5.3.1/js/bootstrap.bundle.js"></script>
     <script src="/js/WCH.js"></script>
 </body>
