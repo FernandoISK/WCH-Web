@@ -145,18 +145,96 @@
         <div class="title-container">
             <h3>Dashboard</h3>
         </div>
-        <div class="container">
+        <div class="container overflow-hidden">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Library</li>
                 </ol>
             </nav>
+            <div class="row gx-3 dashboard-cards">
+                <div class="col">
+                    <div class="card-dashboard content-my-users">
+                        <div class="card-info-text">
+                            <span class="total-number">5</span>
+                            <spna class="text">Avalible user</spna>
+                        </div>
+                        <div class="card-icon">
+                            <i class='bx bxs-user'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-dashboard content-services">
+                        <div class="card-info-text">
+                            <span class="total-number">10</span>
+                            <spna class="text">Total Services</spna>
+                        </div>
+                        <div class="card-icon">
+                            <i class='bx bx-handicap'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card-dashboard content-completed">
+                        <div class="card-info-text">
+                            <span class="total-number">7</span>
+                            <spna class="text">Completed services</spna>
+                        </div>
+                        <div class="card-icon">
+                            <i class='bx bx-calendar-check'></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card-dashboard content-satisfield">
+                        <div class="card-info-text">
+                            <span class="total-number">2</span>
+                            <spna class="text">Satisfaction customer</spna>
+                        </div>
+                        <div class="card-icon">
+                            <i class='bx bx-donate-heart'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="row gx-3">
+                    <div class="col">
+                        <div class="p-1 col-chart">
+                            <h4>Services performed today</h4>
+                            <div id="areaChart"></div>
+                        </div>
+                    </div>
 
+                </div>
+                <br>
+                <div class="row gx-3">
+                    <div class="col">
+                        <div class="p-1 col-chart">
+                            <h4>Total services performed this week</h4>
+                            <div id="columnChart"></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-1 col-chart">
+                            <h4>Total customer satisfaction</h4>
+                            <div id="pieChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <h2>Holaaa</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="/componets/bootstrap-5.3.1/js/bootstrap.bundle.js"></script>
     <script src="/js/WCH.js"></script>
+    <script src="/js/home/dashboard.js"></script>
 </body>
 
 </html>

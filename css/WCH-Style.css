@@ -8,6 +8,10 @@
 }
 
 :root {
+
+    /* ===== SHADOW */
+    --regular-shadow:2px 5px 5px rgba(0, 0, 0, 0.16);
+
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
@@ -16,6 +20,7 @@
     --toggle-color: #DDD;
     --text-color: #767070;
     --green-alave:#8BCB6E;
+    --icon-background:#1C2833;
 
     /* ===== Transition =====*/
     --tran-02: all 0.2s ease;
@@ -39,7 +44,6 @@ body.dark {
     --text-color: #CCC;
     --green-alave:#24500f;
 }
-
 
 /*  ===== Sidebar ===== */
 .sidebar {
@@ -334,7 +338,7 @@ body.dark .switch::before {
     margin-top: 10px;
     z-index: 999;
     display: none ;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: var(--regular-shadow);
 }
 
 .dropdown-user.collapse-all{
@@ -401,11 +405,72 @@ body.dark .switch::before {
     padding: 10px 21px;
     height: auto;
     max-width: calc(100% - 70px);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--regular-shadow);
     margin-bottom: 20px;
 }
 
 .title-container h3{
     color: var(--text-color);
     
+}
+
+.col-chart{
+    border-radius: 10px;
+    background: var(--sidebar-color);
+    box-shadow: var(--regular-shadow);
+}
+
+.col-chart h4{
+    color: var(--text-color);
+    padding: 23px 0;
+}
+.dashboard-cards{
+    padding-bottom: 30px ;
+}
+
+.content-my-users{
+    background: rgba(130,224,170,0.4);
+}
+
+.content-services{
+background: rgba(240,98,146,.4);
+}
+
+.content-completed{
+    background: rgba(144,202,249,0.4);
+}
+
+.content-satisfield{
+    background: rgba(2545,241,118,0.4);
+}
+
+.card-dashboard{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--regular-shadow);
+    display: flex;
+    align-items: center;
+    height: 125px;
+}
+
+.card-dashboard .card-info-text{
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-dashboard .card-info-text span.total-number{
+    font-size: 37px;
+    font-weight: bold ;
+}
+
+.card-dashboard .card-icon{
+    background: var(--icon-background);
+    border-radius: 7px;
+}
+
+.card-dashboard .card-icon i{
+    color: var(--sidebar-color);
+    padding: 6px;
+    font-size: 40px;
 }
