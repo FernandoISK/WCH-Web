@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/componets/bootstrap-5.3.1/css/bootstrap.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/wch-style.css">
+    <link rel="shortcut icon" href="/images/icon_sm.ico" type="image/x-icon">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- nav.Sidebar -->
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/images/icon_sm.ico" alt="Logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Wheelchair Service</span>
+                    <span class="profession">By alave</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <!-- .menu-bar -->
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="search" name="nav-search" id="nav-search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/pages/dashboard.html">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/services/index.html">
+                            <div class="content-icon-nav">
+                                <i class='bx bx-accessibility icon'></i>
+                            </div>
+                            <span class="text nav-text">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/collaborator/index.html">
+                            <i class="bx bx-bell icon"></i>
+                            <span class="text nav-text">Collaborators</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/pages/reviews/index.html">
+                            <i class="bx bx-pie-chart-alt-2 icon"></i>
+                            <span class="text nav-text">Reviwes</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+        <!-- /.menu-bar -->
+        </div>
+    </nav>
+    <!-- /nav.Sidebar -->
+
+    <!-- nav.top-navbar -->
+    <nav class="top-navbar">
+        <div class="navb-items">
+            <header>
+                <div class="user-content">
+                    <div class="image-profile">
+                        <img src="/images/default-profile.png" alt="phone profile">
+                    </div>
+                    <div class="headler-profile">
+                        <span class="username">Fernando Cancino</span>
+                        <span class="user-level">Developer</span>
+                    </div>
+                    <i class='bx bx-chevron-right toggle-user'></i>
+                </div>
+                <div class="dropdown-user">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class='bx bxs-user'></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class='bx bx-bar-chart-square'></i>
+                                <span>My logs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class='bx bx-lock-open-alt'></i>
+                                <span>Change Password</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="dropdown-divider"></div>
+                    <div class="logout-user">
+                        <a href="" class="user-log-out">
+                            <i class="bx bx-log-out"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+
+                </div>
+            </header>
+        </div>
+    </nav>
+    <!-- /nav.top-navbar -->
+
+    <!-- .wrapper-home -->
+    <div class="wrapper-home">
+
+        <div class="main-content">
+            <!-- .title-container -->
+            <div class="title-container">
+                <h3>Dashboard</h3>
+            </div>
+            <!-- /.title-container -->
+
+            <!-- .container -->
+            <div class="container overflow-hidden">
+                <!-- .breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <!-- /.breadcrumb -->
+
+                <!-- Main content-->
+
+                <!-- .accordion -->
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Filter
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .accordion -->
+
+                <!--/ Main content-->
+            </div>
+            <!-- /.container -->
+        </div>
+
+        <footer>
+            <div class="main-footer">
+                <div class="footer-item">
+                    <strong>Copyright &copy; 2023 <a href="https://gamasis.com.mx/">GAMASIS S.A DE C.V.</a></strong> All
+                    rights reserved.
+                </div>
+                <div class="footer-item">
+                    <strong>Version:</strong> 1.0.231
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+    <!-- /.wrapper-home -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="/componets/bootstrap-5.3.1/js/bootstrap.bundle.js"></script>
+    <script src="/js/WCH.js"></script>
+    <script src="/js/home/dashboard.js"></script>
+</body>
+
+</html>

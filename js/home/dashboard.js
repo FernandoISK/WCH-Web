@@ -1,6 +1,6 @@
 var areaChartOptions = {
     series: [{
-        name: 'series1',
+        name: 'Sercise',
         data: [31, 40, 28, 51, 42, 109, 100]
     },],
     chart: {
@@ -29,24 +29,26 @@ areaChart.render();
 
 
 var columnChartOptions = {
+    colors: ['#66DA26'],
+
     series: [{
-        name: 'Servings',
-        data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35]
+        name: 'Services',
+        data: [44, 55, 41, 67, 22, 43, 21]
     }],
     annotations: {
-        points: [{
-            x: 'Bananas',
-            seriesIndex: 0,
-            label: {
-                borderColor: '#775DD0',
-                offsetY: 0,
-                style: {
-                    color: '#fff',
-                    background: '#775DD0',
-                },
-                text: 'Bananas are good',
-            }
-        }]
+        //points: [{
+        //    x: 'Bananas',
+        //    seriesIndex: 0,
+        //    label: {
+        //        borderColor: '#775DD0',
+        //        offsetY: 0,
+        //        style: {
+        //            color: '#fff',
+        //            background: '#775DD0',
+        //        },
+        //        text: 'Bananas are good',
+        //    }
+        //}]
     },
     chart: {
         height: 350,
@@ -54,8 +56,8 @@ var columnChartOptions = {
     },
     plotOptions: {
         bar: {
-            borderRadius: 10,
-            columnWidth: '50%',
+            borderRadius: 5,
+            columnWidth: '70%',
         }
     },
     dataLabels: {
@@ -74,21 +76,16 @@ var columnChartOptions = {
         labels: {
             rotate: -45
         },
-        categories: ['Apples', 'Oranges', 'Strawberries', 'Pineapples', 'Mangoes', 'Bananas',
-            'Blackberries', 'Pears', 'Watermelons', 'Cherries', 'Pomegranates', 'Tangerines', 'Papayas'
-        ],
+        categories: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI','SAT'],
         tickPlacement: 'on'
     },
     yaxis: {
-        title: {
-            text: 'Servings',
-        },
+
     },
     fill: {
         type: 'gradient',
         gradient: {
             shade: 'light',
-            type: "horizontal",
             shadeIntensity: 0.25,
             gradientToColors: undefined,
             inverseColors: true,
@@ -105,12 +102,13 @@ columnChart.render();
 
 
 var pieChartOptions = {
-    series: [44, 55, 13, 43, 22],
+    colors: ['#0075A4','#F3BC00'],
+    series: [55, 13],
     chart: {
         width: 380,
         type: 'pie',
     },
-    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+    labels: ['Satisfied', 'Nonconformists'],
     responsive: [{
         breakpoint: 480,
         options: {

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/componets/bootstrap-5.3.1/css/bootstrap.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/wch-style.css">
+    <link rel="shortcut icon" href="/images/icon_sm.ico" type="image/x-icon">
     <title>Dashboard</title>
 </head>
 
@@ -35,13 +36,13 @@
                 </li>
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/pages/dashboard.html">
                             <i class="bx bx-home-alt icon"></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/pages/services/index.html">
                             <div class="content-icon-nav">
                                 <i class='bx bx-accessibility icon'></i>
                             </div>
@@ -49,13 +50,13 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/pages/collaborator/index.html">
                             <i class="bx bx-bell icon"></i>
                             <span class="text nav-text">Collaborators</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/pages/reviews/index.html">
                             <i class="bx bx-pie-chart-alt-2 icon"></i>
                             <span class="text nav-text">Reviwes</span>
                         </a>
@@ -142,18 +143,26 @@
     <!-- /nav.top-navbar -->
 
     <div class="wrapper-home">
-        <div class="title-container">
-            <h3>Dashboard</h3>
-        </div>
-        <div class="container overflow-hidden">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Library</li>
-                </ol>
-            </nav>
-            <div class="row gx-3 dashboard-cards">
-                <div class="col">
+        <div class="main-content">
+            <!-- .title-container -->
+            <div class="title-container">
+                <h3>Dashboard</h3>
+            </div>
+            <!-- /.title-container -->
+
+            <!-- .container -->
+            <div class="container overflow-hidden">
+                <!-- .breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <!-- /.breadcrumb -->
+
+                <!-- Main content-->
+                <div class="row gx-3 dashboard-cards">
                     <div class="card-dashboard content-my-users">
                         <div class="card-info-text">
                             <span class="total-number">5</span>
@@ -163,8 +172,6 @@
                             <i class='bx bxs-user'></i>
                         </div>
                     </div>
-                </div>
-                <div class="col">
                     <div class="card-dashboard content-services">
                         <div class="card-info-text">
                             <span class="total-number">10</span>
@@ -174,8 +181,6 @@
                             <i class='bx bx-handicap'></i>
                         </div>
                     </div>
-                </div>
-                <div class="col">
                     <div class="card-dashboard content-completed">
                         <div class="card-info-text">
                             <span class="total-number">7</span>
@@ -185,9 +190,7 @@
                             <i class='bx bx-calendar-check'></i>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col">
+
                     <div class="card-dashboard content-satisfield">
                         <div class="card-info-text">
                             <span class="total-number">2</span>
@@ -198,39 +201,52 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <div class="row gx-3">
-                    <div class="col">
+                <div class="text-center">
+                    <div class="row gx-3">
                         <div class="p-1 col-chart">
                             <h4>Services performed today</h4>
                             <div id="areaChart"></div>
                         </div>
                     </div>
-
+                    <br>
+                    <div class="row gx-3">
+                        <div class="col">
+                            <div class="p-1 col-chart">
+                                <h4>Total services performed this week</h4>
+                                <div id="columnChart"></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 col-chart">
+                                <h4>Total customer satisfaction</h4>
+                                <div id="pieChart"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <div class="row gx-3">
-                    <div class="col">
-                        <div class="p-1 col-chart">
-                            <h4>Total services performed this week</h4>
-                            <div id="columnChart"></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="p-1 col-chart">
-                            <h4>Total customer satisfaction</h4>
-                            <div id="pieChart"></div>
-                        </div>
-                    </div>
+                <!-- Main content-->
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+
+        <footer>
+            <div class="main-footer">
+                <div class="footer-item">
+                    <strong>Copyright &copy; 2023 <a href="https://gamasis.com.mx/">GAMASIS S.A DE C.V.</a></strong> All
+                    rights reserved.
+                </div>
+                <div class="footer-item">
+                    <strong>Version:</strong> 1.0.231
                 </div>
             </div>
-        </div>
+
+
+        </footer>
     </div>
 
-    <footer>
-        <h2>Holaaa</h2>
-    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="/componets/bootstrap-5.3.1/js/bootstrap.bundle.js"></script>
     <script src="/js/WCH.js"></script>
