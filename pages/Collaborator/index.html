@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/css/wch-style.css">
     <link rel="shortcut icon" href="/images/icon_sm.ico" type="image/x-icon">
-    <title>Dashboard</title>
+    <title> Dashboard | Collaborators</title>
 </head>
 
 <body>
@@ -147,7 +147,7 @@
         <div class="main-content">
             <!-- .title-container -->
             <div class="title-container">
-                <h3>Dashboard</h3>
+                <h3>Collaborators management</h3>
             </div>
             <!-- /.title-container -->
 
@@ -163,31 +163,108 @@
                 <!-- /.breadcrumb -->
 
                 <!-- Main content-->
-
                 <!-- .accordion -->
                 <div class="accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                Filter
+                                <i class='bx bxs-filter-alt'></i> Filter
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com">
+                                                <label for="floatingInput">Folio</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com">
+                                                <label for="floatingInput">Client name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <div class="form-floating mb-3">
+                                                <select class="form-select" id="floatingSelect"
+                                                    aria-label="Floating label select example">
+                                                    <option selected>Choose option ...</option>
+                                                </select>
+                                                <label for="floatingSelect">Airline</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- .accordion -->
+                <br>
+                <div class="card">
+                    <div class="row-content">
+                        <div class="row">
+                            <div class="col-auto me-auto card-title-header">
+                                <p>- Total services: 3 </p>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"><i class='bx bx-plus'></i> Add</button>
+                            </div>
+                        </div>
 
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Folio</th>
+                                    <th>Cliente name</th>
+                                    <th>Airline</th>
+                                    <th>Date</th>
+                                    <th>Options</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CUN092</td>
+                                    <td>NANCY HARRIS OSSMAN</td>
+                                    <td>SWA</td>
+                                    <td>08/29/2023</td>
+                                    <td><button type="button" class="btn btn-sm btn-secondary"> <i
+                                                class='bx bxs-show'></i> View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>PVR012030</td>
+                                    <td>Concetta Gagliasso</td>
+                                    <td>SWA</td>
+                                    <td>08/29/2023</td>
+                                    <td><button type="button" class="btn btn-sm btn-secondary"> <i
+                                                class='bx bxs-show'></i> View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>CUN000932</td>
+                                    <td>NANCY HARRIS OSSMAN</td>
+                                    <td>SWA</td>
+                                    <td>08/29/2023</td>
+                                    <td><button type="button" class="btn btn-sm btn-secondary"> <i
+                                                class='bx bxs-show'></i> View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <!--/ Main content-->
             </div>
             <!-- /.container -->
